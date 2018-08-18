@@ -1,5 +1,5 @@
-# goldsborough.me
+# iballara.com
 
-My personal website, found at [goldsborough.me](http://www.goldsborough.me) and [goldsborough.github.io](https://www.goldsborough.github.io) .
+My personal website, found at [iballara.com](http://www.iballara.com).
 
 Based on [Pixyll](https://github.com/johnotander/pixyll).
