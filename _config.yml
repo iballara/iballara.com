@@ -1,11 +1,11 @@
 # Site settings
-title:       Peter Goldsborough
-email:       peter@goldsborough.me
-author:      Peter Goldsborough
+title:       Ignasi Ballarà
+email:       ignasi@iballara.com
+author:      Ignasi Ballarà
 baseurl:     ""
-url:         "http://www.goldsborough.me"
+url:         "http://www.iballara.com"
 date_format: "%b %-d, %Y"
-description: A blog on computer science, artificial intelligence and the excitement of life.
+description: A blog on computer science.
 
 # Jekyll settings
 plugins:
@@ -13,7 +13,7 @@ plugins:
   - jekyll-gist
 
 # Google services
-google_analytics: UA-75082316-1
+google_analytics: UA-124207859-1
 google_verification:
 
 # Optional features
@@ -27,15 +27,15 @@ enable_mathjax:       true
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: petergoldsborough
+disqus_shortname: iballara
 
 # Social icons
-github_username: goldsborough
-stackoverflow_id: 1810440
-twitter_username: pegoldsborough
-linkedin_username: petergoldsborough
+github_username: iballara
+stackoverflow_id: 
+twitter_username: iballara
+linkedin_username: ignasi-ballara
 bitcoin_url:
-paypal_url: "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SGAMY6ME8YMSC"
+paypal_url: 
 
 # Post sharing icons
 share_text:
