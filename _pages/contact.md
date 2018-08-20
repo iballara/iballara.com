@@ -4,8 +4,8 @@ title: Contact
 permalink: /contact/
 ---
 
-E-Mail: <a class="hover-only" href="mailto:peter@goldsborough.me">peter@goldsborough.me</a>
+E-Mail: <a class="hover-only" href="mailto:ignasi@iballara.com">ignasi@iballara.com</a>
 
-LinkedIn: <a class="hover-only" href="http://at.linkedin.com/in/petergoldsborough/">http://linkedin.com/in/petergoldsborough</a>
+LinkedIn: <a class="hover-only" href="http://at.linkedin.com/in/ignasi-ballara/">http://linkedin.com/in/ignasi-ballara</a>
 
-GitHub: <a class="hover-only" href="https://github.com/goldsborough">https://github.com/goldsborough</a>
+GitHub: <a class="hover-only" href="https://github.com/iballara">https://github.com/iballara</a>

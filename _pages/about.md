@@ -5,26 +5,31 @@ permalink: /about/
 ---
 
 <div id="about-image">
-	<img src="/images/about/fab.png"/>
+	<img src="/images/about/ignasi.jpg"/>
 	<br>
 </div>
 
-Hi! I'm Peter. I grew up in a small town in Austria and I've always liked
-building things. I studied Computer Science at TU Munich, then went on an
-adventure and did internships at Google, Bloomberg, Facebook and an AI startup.
-I also spent three months at the Broad Institute of MIT and Harvard doing
-research on machine learning for cell biology. I'm now back at Facebook, or
-Facebook AI Research (FAIR) more precisely, helping make the world more open and
-connected. My interests intersect distributed systems, machine learning and compilers.
+Hi!
 
-I think the world and our society is broken in many ways and has far too many inefficiencies. I'm
-excited to be learning things and working on problems that will help change that.
+I'm Ignasi. I was born in a small village on the Costa Brava and I've always liked building things. I have studied 
+Telecommunication Engineering at the Polytechnic University of Catalonia (Barcelona) where I learned deep content about 
+antennas and microwaves theory, signal processing techniques, statistics and stochastic processes, communication systems
+ design and software engineering.
 
-I also like taking the path less traveled by. I like being far away from the mean of normal
-distributions. I like being curious and asking questions. I like questioning defaults and being
-skeptical about what we accept as norms, if those norms limit our potential and increase the
-distance between what is and what should be. I like changing definitions. I like tearing down
-walls. I like breaking down what is old to make space for what is new. I like proving that hard work
-overcomes all obstacles.
+I started my professional career as a scholarship holder in the biomedical engineering laboratory at UPC, where I was 
+introduced to the Android, Matlab and Research world.
+Later on I decided to try the DevOps world to discover what was hidden behind all the code we usually write. I learned 
+a lot about CI / CD pipelines and tools that are used to ensure a good quality of code.
+Finally I went back to the programming sector where I could exploit all my knowledge of software engineering, design 
+patterns, scalability, data structures, algorithms, etc.
 
-Life is a crazy adventure.
+I walk through the world with the idea of ​​making it better using technology. One of the things I like best is to make 
+people's lives easier and better. The day I retire I would like to look back to the world and think that it is a better 
+and more connected place than it used to be and that I have contributed with my small part to be able to achieve it.
+
+I like to question "the way things have always been done", always looking for a point beyond mere programming in order
+ to evaluate the situation or problem with which we find ourselves and look for the best possible scenario to solve it. 
+ I like to replace what is old to make room for what is new.
+
+Other interests I have and I would love to get involved in the professional level are machine learning, data science 
+and robotics.
