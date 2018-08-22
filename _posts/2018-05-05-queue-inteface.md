@@ -4,6 +4,7 @@ title:      Java Queue Interface
 summary:    Java Queue Interface exploration
 date:       2018-05-05 16-48-50
 categories: java
+comments: true
 ---
 
 The goal of this post is to explore the Java Queue Interface. It is basically an interface with the following methods:

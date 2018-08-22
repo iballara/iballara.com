@@ -2,8 +2,9 @@
 layout:     post
 title:      Traversing a Tree
 summary:    Taking a look at the options we have to traverse a tree or graph.
-date:       2018-08-20 13-27-55
+date:       2018-08-15 13-27-55
 categories: cpp
+comments: true
 ---
 
 Sometimes we find ourselves dealing with an algorithm that involves a binary tree
