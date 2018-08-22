@@ -317,7 +317,7 @@ DFS is also useful for computing the shortest path between two nodes, whereas BF
 # Example
 
 We will now solve an algorithm using BFS so you can see how it is used. The algorithm consists in checking **what is
-the maximum number of connected number** of a given grid. We can only connect cells using up, down, left and right
+the maximum number of connected numbers** of a given grid. We can only connect cells using up, down, left and right
 directions. Imagine our grid is the following:
 
 ```
