@@ -94,9 +94,9 @@ void inOrder(Node<T>* node) {
  if (node == NULL) {
   return;
  }
- preOrder(node->left);
+ inOrder(node->left);
  std::cout << node->data << std::endl;
- preOrder(node->right);
+ inOrder(node->right);
 }
 ```
 
@@ -115,8 +115,8 @@ void postOrder(Node<T>* node) {
  if (node == NULL) {
   return;
  }
- preOrder(node->left);
- preOrder(node->right);
+ postOrder(node->left);
+ postOrder(node->right);
  std::cout << node->data << std::endl;
 }
 ```
