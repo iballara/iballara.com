@@ -27,7 +27,7 @@ enable_mathjax:       true
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: iballara
+disqus_shortname: iballara-com
 
 # Social icons
 github_username: iballara
