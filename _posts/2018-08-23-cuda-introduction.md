@@ -165,6 +165,74 @@ int main(void)
 }
 ```
 
+First of all, you might have noticed the following:
+
+```c
+ int *a, *b, *result;
+ int *d_a, *d_b, *d_result;
+```
+So `a`, `b` and `result` are vectors with which we'll work **in the host**. Now, we can't pass these three vectors as
+arguments to the GPU through the kernel, but what we _can_ do is tell the GPU to allocate space in the device's memory
+for the **copies** of these vectors in the device:
+
+```c
+ cudaMalloc((void **) &d_a, size);
+ cudaMalloc((void **) &d_b, size);
+ cudaMalloc((void **) &d_result, size);
+```
+
+Now we have allocated space for the device's vectors, but we haven't transfered the values that `a` and `b` contain.
+This is done with the `cudaMemcpy` function:
+
+```c
+ cudaMemcpy(d_a, a, size, cudaMemcpyHostToDevice);
+ cudaMemcpy(d_b, b, size, cudaMemcpyHostToDevice);
+```
+
+Now the situation is the following: We've got vectors `a` and `b` in the host and in the device we've got two different
+vectors but with the same values: `d_a` and `d_b`. Now we need to call the kernel:
+
+```c
+ add<<<N/THREADS_IN_BLOCK, THREADS_IN_BLOCK>>>(d_a, d_b, d_result, N);
+```
+
+Notice that when we call a kernel we need to specify, at least, a couple of parameters between `<<<` and `>>>`. The
+first execution configuration parameter specifies the dimensions of the grid in the number of blocks. The second
+specifies the dimensions of each block in the number of threads:
+
+![Grid](/images/cuda/grid.jpg)
+
+The kernel is as follows:
+
+```c
+__global__
+void add(int* a, int* b, int* result, int arraySize)
+{
+ int index = threadIdx.x + blockIdx.x * blockDim.x;
+ if (index < arraySize)
+  result[index] = a[index] + b[index];
+}
+```
+
+As mentioned above, the `__global__` keyword indicates that this method is a kernel and that it will be ran by the
+device. Besaides that, each thread has access to three variables which are `threadIdx`, `blockIdx` and `blockDim`. These
+three variables are used and combined so that each thread has a unique identifier(int index). We then check that our index
+is not larger than our array and proceed if so.
+
+The result of our kernel is stored in the device's memory within the variable `d_result`. If we want to have
+access to the values that this variable holds, we need to copy it from the devide to the host:
+
+```c
+cudaMemcpy(result, d_result, size, cudaMemcpyDeviceToHost);
+```
+
+Finally, we free the memory of our device as we do on our host. `cudaFree()` in CUDA is the same as `free()`in C, but
+for the device:
+
+```c
+cudaFree(d_a); cudaFree(d_b); cudaFree(d_result);
+```
+
 CUDA has much more options, methods and macros which I will probably cover on another post in the future. As stated in
 the beginning, the goal of this post was to introduce CUDA to C programmers.
 
