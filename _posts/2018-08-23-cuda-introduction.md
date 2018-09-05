@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Introduction to CUDA
+title:      CUDA 101
 summary:    Post aimed at those who want to learn what CUDA is and how it works.
 date:       2018-08-22 15-23-37
 categories: CUDA
